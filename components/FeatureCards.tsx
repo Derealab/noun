@@ -7,11 +7,11 @@ export default function FeatureCards() {
                 <div className="grid gris-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {CARDS.map((cards) => {
                         return (
-                        <div key={cards.title} className={`${cards.bg} shadow-2xl shadow-black/10 p-6 flex flex-col items-start hover:shadow-2xl transition-shadow duration-300`}>
+                        <div key={cards.title} className={`${cards.bg} shadow-2xl shadow-black/10 p-6 flex flex-col items-start hover:bg-secondary hover:shadow-2xl transition-shadow duration-300`}>
                             <div className={`w-12 h-12 mb-4 rounded-full opacity-50 ${cards.iconColor}`}></div>
-                            <h3 className="text-lg font-semibold text-gray-900 mb-2">{cards.title}</h3>
-                            <p className="text-sm text-gray-600 mb-6 flex-1">{cards.desc}</p>
-                            <button className="flex items-center justify-center gap-3 border border-gray-300 px-4 py-2 text-xs font-semibold text-gray-700 hover:bg-accent transition">{cards.cta}</button>
+                            <h3 className="text-lg font-semibold text-black mb-2">{cards.title}</h3>
+                            <p className="text-sm text-black mb-6 flex-1">{cards.desc}</p>
+                            <button className="flex items-center justify-center gap-3 bg-accent border border-gray-300 px-4 py-2 text-xs font-semibold text-gray-700 hover:bg-accent transition">{cards.cta}</button>
                         </div>
                         )
                     })}

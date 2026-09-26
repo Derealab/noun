@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Student Portal — deliberately styled as a solid button, not a text link,
               and kept in the exact same spot on every page (see Section 1 of the site structure doc) */}
           <Link
-            href="/portal"
+            href="/student/login"
             className="bg-primary px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-secondary"
           >
             Student Portal
@@ -93,7 +93,7 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="/portal"
+              href="/student/login"
               className="mt-2 rounded-full bg-blue-600 px-5 py-2 text-center text-base font-semibold text-white hover:bg-blue-700"
               onClick={() => setIsOpen(false)}
             >

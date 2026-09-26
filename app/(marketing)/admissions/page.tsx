@@ -5,8 +5,8 @@ import { NEWS_ITEMS } from "@/data/siteData";
 // Placeholder data — swap for real content/CMS data as it becomes available.
 const AUDIENCES = [
   { label: "Prospective Student", href: "/admissions", blurb: "See how to apply and what it costs" },
-  { label: "Current Student", href: "/portal", blurb: "Go to your dashboard" },
-  { label: "Staff", href: "/portal", blurb: "Access staff tools" },
+  { label: "Current Student", href: "/student/login", blurb: "Go to your dashboard" },
+  { label: "Staff", href: "/student/login", blurb: "Access staff tools" },
   { label: "Alumni", href: "/alumni", blurb: "Stay connected" },
 ];
 

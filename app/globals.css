@@ -16,6 +16,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-poppins);
+  --container-7xl: 85rem;
 }
 
 body {
@@ -31,4 +32,22 @@ h4,
 h5,
 h6 {
   font-family: var(--font-inter), sans-serif;
+}
+
+.social-icon {
+  display: inline-flex;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  color: #9ca3af;
+  font-size: 10px;
+}
+
+.social-icon.active {
+  border-color: #fbbf24;
+  background: #fbbf24;
+  color: white;
 }

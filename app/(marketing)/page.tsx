@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       {/* 1. Hero */}
-      <section className="relative isolate flex min-h-[560px] items-end overflow-hidden bg-white px-4 py-20 sm:px-6 lg:px-2">
+      <section className="relative isolate flex min-h-140 items-end overflow-hidden bg-white px-4 py-20 sm:px-6 lg:px-2">
         <Image
           src="/image.png"
           alt="Students studying together"
@@ -17,12 +17,13 @@ export default function HomePage() {
           className="-z-20 object-cover"
         />
         <div className="absolute inset-0 -z-10 bg-black/25" />
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-3/4 bg-gradient-to-t from-black/20 via-black/35 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-3/4  from-black/20 via-black/35 to-transparent" />
       </section>
 
       {/* 2. Featured cards between hero and next section */}
       <FeatureCards />
 
+      {/* 3. Section 2 */}
       <section className="flex  justify-between mx-auto max-w-7xl px-4 pb-20 pt-30 sm:px-6 lg:px8">
         <h1 className="mb-5 text-5xl max-w-150 font-medium text-black sm:text-5xl">
           Empowering Futures Through Innovative Education
@@ -31,18 +32,18 @@ export default function HomePage() {
           <p>
             At Nationl Open University Of Nigeria we enourage Open Distance
             Learning to bridge the gap between studying in conventional
-            Universities while working or nursing and it's a very flexible and
+            Universities while working or nursing and it&apos;s a very flexible and
             economical choice
           </p>
           <div className="flex gap-5">
             <Link
-              href="/portal"
+              href="/student/login"
               className="rounde-lg bg-secondary px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-secondary"
             >
               Student Portal
             </Link>
             <Link
-              href="/portal"
+              href="/student/login"
               className="rouded-lg bg-primary px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-secondary"
             >
               Student Portal
@@ -51,21 +52,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. Faculties */}
-      <section className=" flex flex-col mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 bg-primary">
+      {/* 4. Faculties */}
+      <section className=" flex flex-col mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 bg-accent">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end justify-center">
           <div className="flex items-center">
-            <h2 className="mt-2 text-3xl w-[500px] font-bold text-white">
+            <h2 className="mt-2 text-3xl w-125 font-bold text-white">
               Explore Our Top Programs That Inspire and Transform Your Future
             </h2>
           </div>
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {FACULTIES.slice(0, 8).map((faculty, index) => (
+          {FACULTIES.slice(0, 8).map((faculty) => (
             <Link
               key={faculty.slug}
               href={`/academics/${faculty.slug}`}
-              className="group relative flex min-h-[360px] flex-col overflow-hidden brder borer-gray-200 bg-white"
+              className="group relative flex min-h-90 flex-col overflow-hidden brder borer-gray-200 bg-white"
             >
               <div className="relative h-40 overflow-hidden">
                 <Image
@@ -233,7 +234,7 @@ export default function HomePage() {
             ▰ Study in English
           </Link>
           <Link
-            href="/portal"
+            href="/student/login"
             className="transition-colors hover:text-[#69a900]"
           >
             ▣ Campus Portal

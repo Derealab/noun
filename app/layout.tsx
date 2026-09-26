@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-screen bg-[#f4f4f4]">
-        <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col bg-background">
+        <div className="flex min-h-screen w-full flex-col bg-background">
           {children}
         </div>
       </body>
